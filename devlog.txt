@@ -1,0 +1,70 @@
+AllBread
+Samantha Hua
+Ivina Wang
+Jacc Chen
+pd 7
+---------------------
+<Project Summary / Working Title>
+
+/////////// Zone of Reflection \\\\\\\\\\\
+------------------------------------------
+OBSTACLES OVERCOME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wow we so BOSS bc...
+
+UNRESOLVED ISSUES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+blah blah pesky bug...
+maybe some of these will move into the Obs.Ovrcm section...
+
+COOL STUFF LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wow! oo!...
+
+MID-DEVELOPMENT DESIGN CHANGES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+we changed ___ to ___ bc...
+
+LESSONS LEARNED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tales of wisdom gained...
+||||||||||||||||||||||||||||||||||||||||||
+
+
+
+ ______   ______   __   __   __       ______   _______
+/_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\
+\:::_ \ \\::::_\/_\:\ \\ \ \\:\ \    \:::_ \ \\::::__\/__
+ \:\ \ \ \\:\/___/\\:\ \\ \ \\:\ \    \:\ \ \ \\:\ /____/\
+  \:\ \ \ \\::___\/_\:\_/.:\ \\:\ \____\:\ \ \ \\:\\_  _\/
+   \:\/.:| |\:\____/\\ ..::/ / \:\/___/\\:\_\ \ \\:\_\ \ \
+    \____/_/ \_____\/ \___/_(   \_____\/ \_____\/ \_____\/
+==============================================================
+
+
+2022-01-13
+--------------------------------------------------------------
+Jacc :: Suggested the goal of the game was to get items to bake a cake for grandma
+        The journey of the character would be solo
+Ivina :: Suggested the cake would be based off the Minecraft cake, so the player would
+        look for ingredients like milk, eggs, sugar and wheat
+Samantha :: The challenge could be to play different games in order to obtain different ingredients
+All :: Worked on a list of what games + cs topics to include
+==============================================================
+
+2022-01-14
+--------------------------------------------------------------
+Jacc :: Suggested a map for the game + suggested that there would be a guessing game that
+        would incorporate randomness
+Ivina :: Suggested games like coin flip + cracking the code- user guesses a random three digit code
+          with a higher/lower style
+Samantha :: Suggested a scavenger hunt, where the player would collect items in exchange for ingredients
+==============================================================
+
+
+yyyy-mm-dd
+--------------------------------------------------------------
+<Member> :: <Thing member did.>
+<Member> :: <Thing member did.>
+<Member> :: <Thing member did.>
+==============================================================
