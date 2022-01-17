@@ -61,6 +61,15 @@ Ivina :: Suggested games like coin flip + cracking the code- user guesses a rand
 Samantha :: Suggested a scavenger hunt, where the player would collect items in exchange for ingredients
 ==============================================================
 
+2022-01-16
+--------------------------------------------------------------
+Jacc :: Suggested that we remove the map element of the game in order to simplify it. Having
+to print out and update the map after every motion of the user may be too large of a problem.
+Ivina :: Suggested that we remove the cardinal directions from the possible choices the user could make.
+Instead, the user could access any building from any point of the game.
+Samantha :: Suggested that we should focus on a fewer amount of games in the interest of time.
+Narrowed it down to crack the code (higher/lower), unscramble word, and scavenger hunt
+==============================================================
 
 yyyy-mm-dd
 --------------------------------------------------------------
