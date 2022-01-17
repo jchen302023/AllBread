@@ -4,7 +4,7 @@ Ivina Wang
 Jacc Chen
 pd 7
 ---------------------
-<Project Summary / Working Title>
+Cat Bakes Cake for GrandmaCat
 
 /////////// Zone of Reflection \\\\\\\\\\\
 ------------------------------------------
