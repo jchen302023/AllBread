@@ -44,7 +44,13 @@ public void newGame(){
 
   System.out.print (s);
   //etc etc
-  s = "==============================\n";
+  Home();
+
+} // newGame
+
+public void Home() {
+  String s;
+  s = "\n==============================\n";
   s += "\nYou are at home right now.\n";
   s += "What would you like to do?\n";
   s += "\t1: View Inventory \n";
@@ -57,13 +63,18 @@ public void newGame(){
    catch ( IOException e ) { }
 
   if (choice == 1) {
-    String luv4cat = "Love from GrandmaCat";
-    inventory.add(luv4cat);
-    System.out.println("\nInventory:\n");
-    System.out.println(inventory);
+    Inventory();
+    Home();
   } // picking choice 1
 
-} // newGame
+} // home
+
+public void Inventory() {
+  String luv4cat = "Love from GrandmaCat";
+  inventory.add(luv4cat);
+  System.out.println("\nInventory:\n");
+  System.out.println(inventory);
+} // inventory
 
 public static void main( String[] args){
   Woo game = new Woo();
