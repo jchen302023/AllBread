@@ -71,9 +71,10 @@ Samantha :: Suggested that we should focus on a fewer amount of games in the int
 Narrowed it down to crack the code (higher/lower), unscramble word, and scavenger hunt
 ==============================================================
 
-yyyy-mm-dd
+2022-01-17
 --------------------------------------------------------------
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
-<Member> :: <Thing member did.>
+Jacc :: <Thing member did.>
+Ivina :: <Thing member did.>
+Samantha :: <Thing member did.>
+All :: Discussed making a parent class for our locations. Created the Home, new locations (in progress) etc. 
 ==============================================================
