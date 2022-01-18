@@ -44,7 +44,7 @@ public class Woo{
 
     System.out.print (s);
     //etc etc
-    home();
+    this.home();
 
   } // newGame
 
@@ -63,11 +63,11 @@ public class Woo{
     catch ( IOException e ) {}
 
     if (choice == 1) {
-      inventory();
-      home();
+      this.inventory();
+      this.home();
     } // picking choice 1
     else if (choice == 2){
-      leaveHome();
+      this.leaveHome();
     }
 
   } // home
@@ -92,7 +92,7 @@ public class Woo{
     s += "\t1: View Inventory \n";
     s += "\t2: The Rose Garden \n";
     s += "\t3: The Farmers Stand \n";
-    s += "\t4: The Convience Store \n";
+    s += "\t4: The Convenience Store \n";
     s += "\t5: The Barn \n";
     s += "\t6: The Bakery \n";
     s += "\t7: Back to my humble abode \n";
@@ -104,12 +104,12 @@ public class Woo{
     catch ( IOException e ) {}
 
     if (choice == 1) {
-      inventory();
-      leaveHome();
+      this.inventory();
+      this.leaveHome();
     } // choice 1
-    // else if (choice == 2) {
-    //   roseGarden();
-    // } // choice 2
+    else if (choice == 2) {
+      roseGarden();
+    } // choice 2
     // else if (choice == 3) {
     //   roseGarden();
     // }
