@@ -76,5 +76,5 @@ Narrowed it down to crack the code (higher/lower), unscramble word, and scavenge
 Jacc :: <Thing member did.>
 Ivina :: <Thing member did.>
 Samantha :: <Thing member did.>
-All :: Discussed making a parent class for our locations. 
+All :: Discussed making a parent class for our locations. Created the Home, new locations (in progress) etc. 
 ==============================================================
