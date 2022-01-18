@@ -1,5 +1,9 @@
+import java.io.*;
+import java.util.*;
+import java.util.ArrayList;
+
 public class Home extends Location{
-  public void home() {
+  public static void home() {
     String s;
     s = "\n==============================\n";
     s += "\nYou are at home now.\n";
