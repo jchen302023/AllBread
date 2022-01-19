@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Home extends Location{
   // static InputStreamReader isr;
   // static BufferedReader input;
-  static int choice;
+  static String choice;
   // static ArrayList<String> inventory = new ArrayList<String>();
   // ArrayList<String> inventory = Woo.getInventory();
   static Scanner scanner = new Scanner(System.in);
@@ -23,17 +23,18 @@ public class Home extends Location{
     s += "\t3: Exit House \n";
     System.out.print(s);
 
-    choice = Integer.parseInt( scanner.nextLine() );
+    choice = ( scanner.nextLine() );
 
-    if (choice == 1) {
+    if (choice.equals("1")) {
       inventory();
     } // picking choice 1
-    else if (choice == 2){
+    if (choice.equals("2")){
       talkToGrandma();
     } // choice 2
-    else if (choice == 3) {
+    if (choice.equals("3")) {
     } // choice 3
       home();
+      
   } // Home
   public static void talkToGrandma() {
     String requireCake = "cake";

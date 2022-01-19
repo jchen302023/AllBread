@@ -8,6 +8,7 @@ public class Location {
   protected static int choice;
   // protected static ArrayList<String> inventory = new ArrayList<String>();
   static ArrayList<String> inventory = Woo.getInventory();
+  
   static Scanner scanner = new Scanner(System.in);
 
   public static void inventory() {
