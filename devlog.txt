@@ -10,7 +10,11 @@ Cat Bakes Cake for GrandmaCat
 ------------------------------------------
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-wow we so BOSS bc...
+We were originally using BufferedReader as a means of reading user input
+but we changed our code to utilize Scanner. This allowed
+us to read multiple lines of user input in a way that was easy for us
+to understand. This change required us to consult previous homework
+assignments, the think java textbook, and rumpus room lct's.
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,6 +27,12 @@ wow! oo!...
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We removed the map feature from our game because it over-complicated the
+task beyond the amount of time we had to dedicate to this project.
+We also decided to create a Location.java parent class for the rest of our
+location files (ex: RoseGarden, Barn, etc.) in order to simplify our code
+and reduce and redundancies.
+
 we changed ___ to ___ bc...
 
 LESSONS LEARNED
@@ -73,8 +83,22 @@ Narrowed it down to crack the code (higher/lower), unscramble word, and scavenge
 
 2022-01-17
 --------------------------------------------------------------
-Jacc :: <Thing member did.>
-Ivina :: <Thing member did.>
-Samantha :: <Thing member did.>
-All :: Discussed making a parent class for our locations. Created the Home, choices for going to one of our 4 places(v0). Messed around trying to make an inheritance tree in v1.   
+Jacc :: Noted we should create a v1 folder because our changes were beyond one version. The difference
+being that v0 did not include a Location.java parent class.
+Ivina :: Outlined the breakdown of the methods inside Home.java and the other location files.
+Samantha :: Suggested the utilization of a parent class for the location files because of noticeable, repeated code.
+==============================================================
+
+2022-01-18
+--------------------------------------------------------------
+Jacc :: Implemented user inputs as Strings so that the program would not end if the computer could not read the
+input as an integer. These edits make our code more flexible and dynamic. Suggested these edits go into v2 because
+they are distinct from the previous versions. Reminded the group that .equals should be used for comparing Strings.
+Ivina :: Suggested adding ASCII art to spice up our storyline. We realized there was an issue of the parent class
+attempting to access child class methods which is a flaw with our inheritance tree. Ivina noted that the only
+solution is to remove the leaveHome() method from the parent class.
+Samantha :: Remembered the purpose of Scanner and brought up the topic for a group discussion on how to how
+to move forward and implement Scanner. Suggested the use of accessor methods so that the same instance
+variable can be referenced throughout the various files.
+All :: Worked on linking the files correctly and implemented Bakery.java
 ==============================================================
