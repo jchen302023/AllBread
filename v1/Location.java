@@ -3,19 +3,21 @@ import java.util.*;
 import java.util.ArrayList;
 
 public class Location {
-  protected InputStreamReader isr;
-  protected BufferedReader input;
-  protected int choice;
+  // protected static InputStreamReader isr;
+  // protected static BufferedReader input;
+  protected static int choice;
+  // protected static ArrayList<String> inventory = new ArrayList<String>();
+  static ArrayList<String> inventory = Woo.getInventory();
+  static Scanner scanner = new Scanner(System.in);
 
-
-  public void inventory() {
+  public static void inventory() {
     System.out.println("\n==============================\n");
     System.out.println("Inventory:\n");
     if (inventory.size() == 0) {
       System.out.println("Love from GrandmaCat");
     } else {
-      for (int i=0; i<inventory.size(); i++) {
-        System.out.println("You have "+inventory.get(i));
+      for (int i=0; i< inventory.size(); i++) {
+        System.out.println("You have "+ inventory.get(i));
       }
     }
   } // inventory
@@ -34,10 +36,7 @@ public class Location {
     s += "\t7: Back to my humble abode \n";
     System.out.println(s);
 
-    try {
-       choice = Integer.parseInt( input.readLine() );
-    }
-    catch ( IOException e ) {}
+   choice = Integer.parseInt( scanner.nextLine() );
 
     if (choice == 1) {
       inventory();

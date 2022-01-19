@@ -5,42 +5,40 @@ import java.util.ArrayList;
 public class Woo{
 
   //instance variables
-  private int cake;
-  private int wheat, egg, milk, sugar;
-  private int flower;
-  ArrayList<String> inventory = new ArrayList<String>();
 
-  private boolean gameOver;
-
-  private InputStreamReader isr;
-  private BufferedReader input;
+  // private InputStreamReader isr;
+  // private BufferedReader input;
   private int choice;
+  private Scanner scanner = new Scanner(System.in);
+  private static ArrayList<String> inventory;
 
   //default constructor
   public Woo(){
-    cake = 0;
-    wheat = 0;
-    egg = 0;
-    milk = 0;
-    sugar = 0;
-    flower = 0;
-    gameOver = false;
-    isr = new InputStreamReader( System.in );
-    input = new BufferedReader( isr );
+    inventory = new ArrayList<String>();
+    boolean gameOver = false;
+    // isr = new InputStreamReader( System.in );
+    // input = new BufferedReader( isr );
+
     newGame();
   }
+
+  public static ArrayList<String> getInventory() { return inventory; }
 
   //methods
   public void newGame(){
     String s;
     //intro
     s = "\n==== Welcome little cat :3 ====\n";
-    s += "You are on a mission. Today is your grandma's bithday!!\n";
+    s += "\n You are on a mission. Today is your grandma's birthday!!\n";
     s += "And you, her favorite little kitten, FORGOR!!! OH NO!!!\n";
-    s += "BUT FRET NOT. YOUR LOCAL MERCHANTS HAVE YOUR BACK!!!\n";
-    s += "Collect the necessary ingredients, bake the cake, and\n";
+    s += "\nBUT FRET NOT. YOUR LOCAL MERCHANTS HAVE YOUR BACK!!!\n";
+    s += "\nCollect the necessary ingredients, bake the cake, and\n";
     s += "deliver it to GrandmaCat before the day ends.\n";
-    s += "Get going now my little kitten :)\n";
+    s += "\nGet going now my little kitten :)\n";
+    s += "\n      |\\      _,,,---,,_\n";
+    s += "ZZZzz /,`.-'`'    -.  ;-;;,_\n";
+    s += "     |,4-  ) )-,_. ,\\ (  `'-'\n";
+    s += "    '---''(_/--'  `-'\\_)   \n";
 
     System.out.print (s);
     //etc etc
