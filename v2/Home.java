@@ -3,10 +3,7 @@ import java.util.*;
 import java.util.ArrayList;
 
 public class Home extends Location{
-  // static InputStreamReader isr;
-  // static BufferedReader input;
-  // static ArrayList<String> inventory = new ArrayList<String>();
-  // ArrayList<String> inventory = Woo.getInventory();
+
   static Scanner scanner = new Scanner(System.in);
 
   public static void home() {
@@ -31,8 +28,9 @@ public class Home extends Location{
       talkToGrandma();
     } // choice 2
     if (choice.equals("3")) {
-    } // choice 3
       leaveHome();
+    } // choice 3
+
   } // Home
   public static void talkToGrandma() {
     String requireCake = "cake";

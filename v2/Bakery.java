@@ -29,8 +29,9 @@ public class Bakery extends Location {
       talkToBaker();
     } // choice 2
     if (choice.equals("3")) {
-    } // choice 3
       leave();
+    } // choice 3
+
   } // Bakery
 
 public static void talkToBaker() {
@@ -67,10 +68,11 @@ public static void recieveCake() {
   s += "\nCake added to inventory\n";
   s += "\nBakerCat advises you to bring it to GrandmaCat while it is still warm\n";
   System.out.print(s);
-  inventory.remove(0);
-  inventory.remove(1);
-  inventory.remove(2);
-  inventory.remove(3);
+
+  for (int i = 0; i < inventory.size(); i ++) {
+    inventory.remove(i);
+  }
+
   inventory.add("cake");
 
 } // recieveCake
@@ -109,10 +111,10 @@ public static void recieveCake() {
     // } // choice 5
     else if (choice.equals("6")) {
       Bakery.bakery();
-    }
+    } // choice 6
     else if (choice.equals("7")) {
       Home.home();
-    }
+    } // choice 7
   } // leave
 
 } // Bakery

@@ -3,10 +3,8 @@ import java.util.*;
 import java.util.ArrayList;
 
 public class Location {
-  // protected static InputStreamReader isr;
-  // protected static BufferedReader input;
+
   protected static String choice;
-  // protected static ArrayList<String> inventory = new ArrayList<String>();
   static ArrayList<String> inventory = Woo.getInventory();
   static Scanner scanner = new Scanner(System.in);
 

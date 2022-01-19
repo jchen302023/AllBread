@@ -5,9 +5,6 @@ import java.util.ArrayList;
 public class Woo{
 
   //instance variables
-
-  // private InputStreamReader isr;
-  // private BufferedReader input;
   private int choice;
   private Scanner scanner = new Scanner(System.in);
   private static ArrayList<String> inventory;
@@ -16,12 +13,10 @@ public class Woo{
   public Woo(){
     inventory = new ArrayList<String>();
     boolean gameOver = false;
-    // isr = new InputStreamReader( System.in );
-    // input = new BufferedReader( isr );
-
     newGame();
   }
-
+  
+// Accessor Methods
   public static ArrayList<String> getInventory() { return inventory; }
 
   //methods
