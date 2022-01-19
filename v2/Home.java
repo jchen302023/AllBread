@@ -14,15 +14,16 @@ public class Home extends Location{
     s += "  |__間__| |\n";
     s += "\nYou are at home now.\n";
     s += "What would you like to do?\n";
-    s += "\t1: View Inventory \n";
+    s += "\n\t1: View Inventory \n";
     s += "\t2: Talk to GrandmaCat \n";
     s += "\t3: Exit House \n";
     System.out.print(s);
 
-    choice = scanner.nextLine();
+    choice = (scanner.nextLine());
 
     if (choice.equals("1")) {
       inventory();
+      home();
     } // picking choice 1
     if (choice.equals("2")){
       talkToGrandma();
@@ -50,9 +51,9 @@ public class Home extends Location{
   public static void leaveHome() {
     String s;
     s = "\n==============================\n";
-    s += "You have chosen to leave your humble abode. \n";
-    s += "Where would you like to go? \n";
-    s += "\t1: View Inventory \n";
+    s += "\nYou have chosen to leave your humble abode. \n";
+    s += "\nWhere would you like to go? \n";
+    s += "\n\t1: View Inventory \n";
     s += "\t2: The Rose Garden \n";
     s += "\t3: The Farmers Stand \n";
     s += "\t4: The Convience Store \n";
@@ -61,15 +62,15 @@ public class Home extends Location{
     s += "\t7: Back to my humble abode \n";
     System.out.println(s);
 
-   choice = scanner.nextLine();
+   choice = (scanner.nextLine());
 
    if (choice.equals("1")) {
      inventory();
      leaveHome();
    } // picking choice 1
-    // else if (choice == 2) {
-    //   roseGarden();
-    // } // choice 2
+    else if (choice.equals("2")) {
+      RoseGarden.garden();
+    } // choice 2
     // else if (choice == 3) {
     //   roseGarden();
     // } // choice 3

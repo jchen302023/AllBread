@@ -2,18 +2,18 @@ import java.io.*;
 import java.util.*;
 import java.util.ArrayList;
 
-public class RoseGarden{
+public class RoseGarden extends Location{
 
   static Scanner scanner = new Scanner(System.in);
 
   public static void garden() {
     String s;
     s = "\n==============================\n";
-    s += "   🎕🎕🎕 \n";
+    s += "\n   🎕🎕🎕 \n";
     s += "\nYou are at the Rose Garden now.\n";
     s += "\nYou and Grandma tend to the flowers together over the weekends\n";
-    s += "What would you like to do?\n";
-    s += "\t1: View Inventory \n";
+    s += "\nWhat would you like to do?\n";
+    s += "\n\t1: View Inventory \n";
     s += "\t2: Pick a rose \n";
     s += "\t3: Exit Garden \n";
     System.out.print(s);
@@ -22,9 +22,11 @@ public class RoseGarden{
 
     if (choice.equals("1")) {
       inventory();
+      garden();
     } // picking choice 1
     if (choice.equals("2")){
       pickFlower();
+      garden();
     } // choice 2
     if (choice.equals("3")) {
       leave();
@@ -32,15 +34,23 @@ public class RoseGarden{
   } // garden
 
   public static void pickFlower() {
+    String s;
+    s = "\n==============================\n";
+    s += "\nYou pick a rose\n";
+    s += "\nRose added to inventory\n";
+    s += "\nSomeone might want this pretty flower...\n";
+    System.out.print(s);
 
-  } // pickFlower 
+    inventory.add("rose");
+
+  } // pickFlower
 
     public static void leave() {
       String s;
       s = "\n==============================\n";
-      s += "You have decided to leave the Garden. \n";
-      s += "Where would you like to go? \n";
-      s += "\t1: View Inventory \n";
+      s += "\nYou have decided to leave the Garden. \n";
+      s += "\nWhere would you like to go? \n";
+      s += "\n\t1: View Inventory \n";
       s += "\t2: The Rose Garden \n";
       s += "\t3: The Farmers Stand \n";
       s += "\t4: The Convience Store \n";
