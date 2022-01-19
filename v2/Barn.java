@@ -43,6 +43,7 @@ public class Barn extends Location{
     } // choice 2
     else if (choice.equals("3")) {
       crackTheCode();
+      barn(); 
     } // choice 3
     else if (choice.equals("4")) {
       leave();
@@ -86,7 +87,7 @@ public class Barn extends Location{
 
    if (choice.equals("1")) {
      inventory();
-     RoseGarden.garden();
+     leave();
    } // picking choice 1
     // else if (choice == 2) {
     //   roseGarden();
