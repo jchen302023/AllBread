@@ -24,11 +24,11 @@ public class RoseGarden extends Location{
       inventory();
       garden();
     } // picking choice 1
-    if (choice.equals("2")){
+    else if (choice.equals("2")){
       pickFlower();
       garden();
     } // choice 2
-    if (choice.equals("3")) {
+    else if (choice.equals("3")) {
       leave();
     } // choice 3
   } // garden
@@ -36,7 +36,7 @@ public class RoseGarden extends Location{
   public static void pickFlower() {
     String s;
     s = "\n==============================\n";
-    s += "\nYou pick a rose\n";
+    s += "\nYou picked a rose\n";
     s += "\nRose added to inventory\n";
     s += "\nSomeone might want this pretty flower...\n";
     System.out.print(s);

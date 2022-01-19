@@ -108,9 +108,9 @@ public static void recieveCake() {
     // else if (choice == 2) {
     //   roseGarden();
     // } // choice 4
-    // else if (choice == 2) {
-    //   roseGarden();
-    // } // choice 5
+    else if (choice.equals("5")) {
+      Barn.barn();
+    } // choice 5
     else if (choice.equals("6")) {
       Bakery.bakery();
     } // choice 6

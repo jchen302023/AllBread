@@ -71,15 +71,15 @@ public class Home extends Location{
     else if (choice.equals("2")) {
       RoseGarden.garden();
     } // choice 2
-    // else if (choice == 3) {
-    //   roseGarden();
+    // else if (choice.equals("3")) {
+    //   Barn.barn();
     // } // choice 3
     // else if (choice == 4) {
     //   roseGarden();
     // } // choice 4
-    // else if (choice == 5) {
-    //   roseGarden();
-    // } // choice 5
+    else if (choice.equals("5")) {
+      Barn.barn();
+    } // choice 5
     else if (choice.equals("6")) {
       Bakery.bakery();
     }

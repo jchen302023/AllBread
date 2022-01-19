@@ -15,9 +15,9 @@ public class Location {
       System.out.println("Love from GrandmaCat");
     } else {
       for (int i=0; i< inventory.size(); i++) {
-        System.out.println("You have "+ inventory.get(i));
+        System.out.println("You have a(n)"+ inventory.get(i));
       }
     }
   } // inventory
 
-} // Location 
+} // Location

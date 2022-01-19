@@ -15,7 +15,7 @@ public class Woo{
     boolean gameOver = false;
     newGame();
   }
-  
+
 // Accessor Methods
   public static ArrayList<String> getInventory() { return inventory; }
 
