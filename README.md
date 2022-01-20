@@ -1,4 +1,5 @@
-# AllBread
+# TNPG: AllBread
+#### Samantha Hua, Ivina Wang, Jack Chen 
 
 * v0 => one file, Woo.java 
 * v1 => Code added into Woo, Home, Location.java 
