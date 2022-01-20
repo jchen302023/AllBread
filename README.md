@@ -7,4 +7,5 @@
 Running instructions: 
 * javac all files 
 * run from Woo (java Woo) in terminal.
-*Good luck on your adventure! 
+
+Good luck on your adventure! 
