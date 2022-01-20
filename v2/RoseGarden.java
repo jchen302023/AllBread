@@ -41,7 +41,7 @@ public class RoseGarden extends Location{
     s += "\nSomeone might want this pretty flower...\n";
     System.out.print(s);
 
-    inventory.add("rose");
+    inventory.add("roses");
 
   } // pickFlower
 
