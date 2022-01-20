@@ -6,8 +6,8 @@
 
 #### Running instructions: 
 ```
-  $javac *.java
-  $java woo
+  $ javac *.java
+  $ java woo
 ```
 
 Good luck on your adventure! 
