@@ -24,7 +24,7 @@ maybe some of these will move into the Obs.Ovrcm section...
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 javac *.java compiles all the .java files in the current directory. However,
-if there is an error in one of the files, the whole thing does not work. Compile individually. 
+if there is an error in one of the files, the whole thing does not work. Compile individually.
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -102,4 +102,17 @@ Samantha :: Remembered the purpose of Scanner and brought up the topic for a gro
 to move forward and implement Scanner. Suggested the use of accessor methods so that the same instance
 variable can be referenced throughout the various files.
 All :: Worked on linking the files correctly and implemented Bakery.java
+==============================================================
+
+2022-01-19
+--------------------------------------------------------------
+Jacc :: Implemented RoseGarden.java so that it would add a rose to the player's inventory. Discovered that
+we needed to utilize the absolute value method to ensure that we were calculating the positive difference
+between the user's guess and the random number.
+Ivina :: Reminded the group that we need to be cognizant of if statement prioritization because
+we need to check if the user has won the game first before calculating how hot/cold the guess was.
+Worked out the math for how to create a random number within a range (pointed back to helpful assignments we have already done)
+Samantha :: Suggested a new game where instead of a higher/lower game we should create a hot/cold game so
+that guessing is harder as the user does not know if their guess is higher or lower in comparison to
+the random number.
 ==============================================================
