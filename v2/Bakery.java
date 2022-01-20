@@ -71,8 +71,11 @@ public static void recieveCake() {
   s += "\nBakerCat advises you to bring it to GrandmaCat while it is still warm\n";
   System.out.print(s);
 
-  for (int i = 0; i < inventory.size(); i ++) {
-    inventory.remove(i);
+  // for (int i = 0; i < inventory.size(); i ++) {
+  //   inventory.remove(i);
+  // }
+  while (inventory.size() > 0) {
+    inventory.remove(0);
   }
 
   inventory.add("cake");
@@ -102,12 +105,12 @@ public static void recieveCake() {
     else if (choice.equals("2")) {
       RoseGarden.garden();
     } // choice 2
-    // else if (choice == 3) {
-    //   roseGarden();
-    // } // choice 3
-    // else if (choice == 2) {
-    //   roseGarden();
-    // } // choice 4
+    else if (choice.equals("3")) {
+      FarmerStand.stand();
+    } // choice 3
+    else if (choice.equals("4")) {
+      ConvenienceStore.store();
+    } // choice 4
     else if (choice.equals("5")) {
       Barn.barn();
     } // choice 5

@@ -74,13 +74,14 @@ public class Barn extends Location{
     System.out.println(s);
 
     int randInt = 111 + (int) (Math.random()*898);
+    System.out.println(randInt);
     int guesses = 20;
 
     while(guesses > 0) {
       int userGuess = Integer.parseInt(scanner.nextLine());
       System.out.println("You have guessed: "+userGuess);
       if (userGuess == randInt) {
-        System.out.println("good job my lil kitten, you have cracked the code!");
+        System.out.println("Good job my lil kitten, you have cracked the code!");
         addEggsAndMilk();
         break;
       }
@@ -144,12 +145,12 @@ public class Barn extends Location{
     else if (choice.equals("2")) {
       RoseGarden.garden();
     } // choice 2
-    // else if (choice == 3) {
-    //   roseGarden();
-    // } // choice 3
-    // else if (choice == 2) {
-    //   roseGarden();
-    // } // choice 4
+    else if (choice.equals("3")) {
+      FarmerStand.stand();
+    } // choice 3
+    else if (choice.equals("4")) {
+      ConvenienceStore.store();
+    } // choice 4
     else if (choice.equals("5")) {
       barn();
     } // choice 5

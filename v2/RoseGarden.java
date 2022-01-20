@@ -63,20 +63,20 @@ public class RoseGarden extends Location{
 
      if (choice.equals("1")) {
        inventory();
-       garden();
+       leave();
      } // picking choice 1
-      // else if (choice == 2) {
-      //   roseGarden();
-      // } // choice 2
-      // else if (choice == 3) {
-      //   roseGarden();
-      // } // choice 3
-      // else if (choice == 2) {
-      //   roseGarden();
-      // } // choice 4
-      // else if (choice == 2) {
-      //   roseGarden();
-      // } // choice 5
+     else if (choice.equals("2")) {
+       garden();
+     } // choice 4
+     else if (choice.equals("3")) {
+       FarmerStand.stand();
+     } // choice 3
+      else if (choice.equals("4")) {
+        ConvenienceStore.store();
+      } // choice 4
+      else if (choice.equals("5")) {
+        Barn.barn();
+      } // choice 5
       else if (choice.equals("6")) {
         Bakery.bakery();
       } // choice 6

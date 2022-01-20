@@ -37,11 +37,14 @@ public class ConvenienceStore extends Location{
     s = "\n==============================\n";
     s += "\nHey little buddy, I'm Iven.\n";
     s += "\nI want to give something to a special someone...\n";
-    s += "\nDo you by chance have a flower on you?\n";
-    s += "\nI can give you some sugar for your troubles. \n\n";
-    s += "\n\t1: Give Iven a rose \n";
+    s += "\nBut I am still on my shift...\n";
+    s += "\nDo you by chance have flowers on you?\n";
+    s += "\nI can give you some sugar for your troubles. \n";
+    s += "\n\t1: Give Iven roses\n";
     s += "\t2: Exit conversation like the introvert you are \n";
     System.out.print(s);
+
+    choice = (scanner.nextLine());
 
     if (choice.equals("1")) {
       exchange();
@@ -60,7 +63,7 @@ public class ConvenienceStore extends Location{
     boolean exchangeHappened = false;
 
     for (int i = 0; i < inventory.size(); i ++) {
-      if ((inventory.get(i)).compareTo("rose") == 0) {
+      if ((inventory.get(i)).compareTo("roses") == 0) {
         inventory.remove(i);
         inventory.add("sugar");
         exchangeHappened = true;
@@ -73,20 +76,59 @@ public class ConvenienceStore extends Location{
       s += "\nTYsm ilyyyy!! <3\n";
       s += "\nOops I didn't mean to say that... uh,,, thanks I guess\n";
       s += "\nHere's your sugar :))\n";
+      s += "\nSugar added to inventory\n";
      // add sugar art
       System.out.print(s);
     }
     else {
       s = "\n==============================\n";
-      s += "\nYou don't got no flower.";
+      s += "\nYou don't got no flowers.";
       s += "\nI'm sad. ):";
+      System.out.print(s);
     }
 
-  }
+  } // exchange
 
   public static void leave() {
+    String s;
+    s = "\n==============================\n";
+    s += "\nYou have decided to leave the Convenience Store. \n";
+    s += "\nWhere would you like to go? \n";
+    s += "\n\t1: View Inventory \n";
+    s += "\t2: The Rose Garden \n";
+    s += "\t3: The Farmers Stand \n";
+    s += "\t4: The Convenience Store \n";
+    s += "\t5: The Barn \n";
+    s += "\t6: The Bakery \n";
+    s += "\t7: Back to my humble abode \n";
+    System.out.println(s);
 
-  }
+   choice = scanner.nextLine();
+
+   if (choice.equals("1")) {
+     inventory();
+     leave();
+   } // picking choice 1
+    else if (choice.equals("2")) {
+      RoseGarden.garden();
+    } // choice 2
+    else if (choice.equals("3")) {
+      FarmerStand.stand();
+    } // choice 3
+    else if (choice.equals("4")) {
+      ConvenienceStore.store();
+    } // choice 4
+    else if (choice.equals("5")) {
+      Barn.barn();
+    } // choice 5
+    else if (choice.equals("6")) {
+      Bakery.bakery();
+    } // choice 6
+    else if (choice.equals("7")) {
+      Home.home();
+    } // choice 7
+
+  } // leave
 
 
 } // ConvenienceStore

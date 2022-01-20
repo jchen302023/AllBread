@@ -8,16 +8,18 @@ public class Woo{
   private int choice;
   private Scanner scanner = new Scanner(System.in);
   private static ArrayList<String> inventory;
+  // private static boolean gotCake;
 
   //default constructor
   public Woo(){
     inventory = new ArrayList<String>();
-    boolean gameOver = false;
+    // gotCake = false;
     newGame();
   }
 
 // Accessor Methods
   public static ArrayList<String> getInventory() { return inventory; }
+  // public static boolean getGotCake() { return gotCake; }
 
   //methods
   public void newGame(){
@@ -43,6 +45,7 @@ public class Woo{
 
   public static void main( String[] args){
     Woo game = new Woo();
+
   }
 
 }

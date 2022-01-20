@@ -37,7 +37,7 @@ public class Home extends Location{
     String requireCake = "cake";
     for (int i = 0; i < inventory.size(); i ++) {
       if ((inventory.get(i)).compareTo("cake") == 0) {
-        System.out.println("Game over!");
+        System.out.println("Game over!"); 
         return;
       } // if you have cake game ends
     }
@@ -56,7 +56,7 @@ public class Home extends Location{
     s += "\n\t1: View Inventory \n";
     s += "\t2: The Rose Garden \n";
     s += "\t3: The Farmers Stand \n";
-    s += "\t4: The Convience Store \n";
+    s += "\t4: The Convenience Store \n";
     s += "\t5: The Barn \n";
     s += "\t6: The Bakery \n";
     s += "\t7: Back to my humble abode \n";
@@ -71,12 +71,12 @@ public class Home extends Location{
     else if (choice.equals("2")) {
       RoseGarden.garden();
     } // choice 2
-    // else if (choice.equals("3")) {
-    //   Barn.barn();
-    // } // choice 3
-    // else if (choice == 4) {
-    //   roseGarden();
-    // } // choice 4
+    else if (choice.equals("3")) {
+      FarmerStand.stand();
+    } // choice 3
+    else if (choice.equals("4")) {
+      ConvenienceStore.store();
+    } // choice 4
     else if (choice.equals("5")) {
       Barn.barn();
     } // choice 5
