@@ -1,5 +1,4 @@
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Bakery extends Location {

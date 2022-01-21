@@ -1,5 +1,4 @@
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Home extends Location{
@@ -37,7 +36,7 @@ public class Home extends Location{
     String requireCake = "cake";
     for (int i = 0; i < inventory.size(); i ++) {
       if ((inventory.get(i)).compareTo("cake") == 0) {
-        System.out.println("Game over!"); 
+        System.out.println("Game over!");
         return;
       } // if you have cake game ends
     }
