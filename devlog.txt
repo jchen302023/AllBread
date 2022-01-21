@@ -116,3 +116,15 @@ Samantha :: Suggested a new game where instead of a higher/lower game we should 
 that guessing is harder as the user does not know if their guess is higher or lower in comparison to
 the random number.
 ==============================================================
+
+2022-01-20
+--------------------------------------------------------------
+Jacc :: Outlined the rest of the tasks we have to complete to finish our project. Set a broad timeline for the
+remaining parts of our project so that we finish on time.
+Ivina :: Edited the flowchart to reflect standard flowcharting convention. Refreshed the group on what to include
+in a flowchart and how to visually indicate different elements.
+Samantha :: Encountered a dilemma when tackling the scrambling word game. Debated how to properly scramble
+the words (ArrayList<Character> vs char[]). Factored in things like ease to code, ease to understand, and
+efficiency. Updated the import statements of all of the files so that we no longer utilize java.util.* (This
+issue was brought up in a Piazza post)
+==============================================================
