@@ -33,7 +33,6 @@ public class FarmerStand extends Location{
     if (choice.equals("4")) {
       leave();
     } // choice 4
-
   } // store
 
   public static void talkToPeng() {
@@ -45,13 +44,77 @@ public class FarmerStand extends Location{
     s += "\nAnyways,\n";
     s += "\nIf you can help me, I can give you some leftover wheat!\n";
     System.out.println(s);
-    inventory.add("wheat");
-
   } // talkToBarney
 
   public static void unscrambleWord() {
+    String s;
+    s = "\n==============================\n";
+    s += "\nYou look down at the paper and what you see baffles you.";
+    s += "\nYou have to unscramble words! Your favorite thing to do!";
+    s += "\nEven better, they're CS terms!!!!";
+    System.out.println(s);
+
+    // word 1 - array
+    ArrayList<char>[] word1;
+    word1.add('a');
+    word1.add('r');
+    word1.add('r');
+    word1.add('a');
+    word1.add('y');
+
+    // word 2 - memory
+    ArrayList<char>[] word2;
+    word2.add('m');
+    word2.add('e');
+    word2.add('m');
+    word2.add('o');
+    word2.add('r');
+    word2.add('y');
+
+    // word 3 - programming
+    ArrayList<char>[] word3;
+    word3.add('p');
+    word3.add('r');
+    word3.add('o');
+    word3.add('g');
+    word3.add('r');
+    word3.add('a');
+    word3.add('m');
+    word3.add('m');
+    word3.add('i');
+    word3.add('n');
+    word3.add('g');
+
+    ArrayList<char>[] word4;
+    word4.add('c');
+    word4.add('o');
+    word4.add('n');
+    word4.add('c');
+    word4.add('a');
+    word4.add('t');
+    word4.add('e');
+    word4.add('n');
+    word4.add('a');
+    word4.add('t');
+    word4.add('i');
+    word4.add('o');
+    word4.add('n');
+
+    s = "\nThe words increasing in difficulty so proceed with caution.";
+    s += "\nHere's word one!";
+    System.out.println(s);
+
+
 
   } //scrambleds
+
+  public static ArrayList<Char>[] randomize(ArrayList<Char>[] a) {
+    ArrayList<char>[] output = new ArrayList<char>[a.size];
+    for (int i=a.size; i>0; i--) {
+      int randIndex = (int) (Math.random()*a.size());
+    }
+    return output;
+  }
 
   public static void leave() {
     String s;

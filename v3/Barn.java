@@ -73,7 +73,6 @@ public class Barn extends Location{
     System.out.println(s);
 
     int randInt = 111 + (int) (Math.random()*898);
-    System.out.println(randInt);
     int guesses = 20;
 
     while(guesses > 0) {

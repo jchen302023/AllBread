@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class ConvenienceStore extends Location{
 
-    static Scanner scanner = new Scanner(System.in);
+  static Scanner scanner = new Scanner(System.in);
 
   public static void store(){
     String s;
@@ -82,7 +82,7 @@ public class ConvenienceStore extends Location{
     else {
       s = "\n==============================\n";
       s += "\nYou don't got no flowers.";
-      s += "\nI'm sad. ):";
+      s += "\nI'm sad. ):\n";
       System.out.print(s);
     }
 

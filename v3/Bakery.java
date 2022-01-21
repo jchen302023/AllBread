@@ -89,7 +89,7 @@ public static void recieveCake() {
     s += "\n\t1: View Inventory \n";
     s += "\t2: The Rose Garden \n";
     s += "\t3: The Farmers Stand \n";
-    s += "\t4: The Convience Store \n";
+    s += "\t4: The Convenience Store \n";
     s += "\t5: The Barn \n";
     s += "\t6: The Bakery \n";
     s += "\t7: Back to my humble abode \n";
