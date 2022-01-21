@@ -27,6 +27,7 @@ public class Bakery extends Location {
     } // picking choice 1
     if (choice.equals("2")){
       talkToBaker();
+      bakery();
     } // choice 2
     if (choice.equals("3")) {
       leave();
@@ -50,7 +51,6 @@ public static void talkToBaker() {
   } // outer
   if (counter == 4) {
     recieveCake();
-    leave();
   }
   else {
     String s;
@@ -58,7 +58,6 @@ public static void talkToBaker() {
     s += "\nHmm... You do not seem to have all the ingredients\n";
     s += "\nBakerCat advises you to come back when you have them all\n";
     System.out.print(s);
-    leave();
   }
 } // talkToBaker
 

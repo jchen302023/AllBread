@@ -4,6 +4,10 @@ import java.util.ArrayList;
 public class FarmerStand extends Location{
 
   static Scanner scanner = new Scanner(System.in);
+  // static ArrayList<String>[] word1;
+  // static ArrayList<String>[] word2;
+  // static ArrayList<String>[] word3;
+  // static ArrayList<String>[] word4;
 
   public static void stand(){
     String s;
@@ -55,50 +59,47 @@ public class FarmerStand extends Location{
     System.out.println(s);
 
     // word 1 - array
-    ArrayList<char>[] word1;
-    word1.add('a');
-    word1.add('r');
-    word1.add('r');
-    word1.add('a');
-    word1.add('y');
-
-    // word 2 - memory
-    ArrayList<char>[] word2;
-    word2.add('m');
-    word2.add('e');
-    word2.add('m');
-    word2.add('o');
-    word2.add('r');
-    word2.add('y');
-
-    // word 3 - programming
-    ArrayList<char>[] word3;
-    word3.add('p');
-    word3.add('r');
-    word3.add('o');
-    word3.add('g');
-    word3.add('r');
-    word3.add('a');
-    word3.add('m');
-    word3.add('m');
-    word3.add('i');
-    word3.add('n');
-    word3.add('g');
-
-    ArrayList<char>[] word4;
-    word4.add('c');
-    word4.add('o');
-    word4.add('n');
-    word4.add('c');
-    word4.add('a');
-    word4.add('t');
-    word4.add('e');
-    word4.add('n');
-    word4.add('a');
-    word4.add('t');
-    word4.add('i');
-    word4.add('o');
-    word4.add('n');
+    // word1.add("a");
+    // word1.add("r");
+    // word1.add("r");
+    // word1.add("a");
+    // word1.add("y");
+    //
+    // // word 2 - memory
+    // word2.add("m");
+    // word2.add("e");
+    // word2.add("m");
+    // word2.add("o");
+    // word2.add("r");
+    // word2.add("y");
+    //
+    // // word 3 - programming
+    // word3.add("p");
+    // word3.add("r");
+    // word3.add("o");
+    // word3.add("g");
+    // word3.add("r");
+    // word3.add("a");
+    // word3.add("m");
+    // word3.add("m");
+    // word3.add("i");
+    // word3.add("n");
+    // word3.add("g");
+    //
+    // // word 4 - concatenation
+    // word4.add("c");
+    // word4.add("o");
+    // word4.add("n");
+    // word4.add("c");
+    // word4.add("a");
+    // word4.add("t");
+    // word4.add("e");
+    // word4.add("n");
+    // word4.add("a");
+    // word4.add("t");
+    // word4.add("i");
+    // word4.add("o");
+    // word4.add("n");
 
     s = "\nThe words increasing in difficulty so proceed with caution.";
     s += "\nHere's word one!";
@@ -106,14 +107,70 @@ public class FarmerStand extends Location{
 
 
 
+
+
   } //scrambleds
 
-  public static ArrayList<Char>[] randomize(ArrayList<Char>[] a) {
-    ArrayList<char>[] output = new ArrayList<char>[a.size];
+  public static ArrayList<String>[] randomize(ArrayList<String>[] a) {
+    ArrayList<String>[] output = new ArrayList<String>[a.size()];
+    for( String o : a )
+      output.add( o );
     for (int i=a.size; i>0; i--) {
-      int randIndex = (int) (Math.random()*a.size());
+      int randIndex = (int) (Math.random()*i);
+      output.add(output.get(randIndex));
+      output.remove(randIndex);
     }
+
     return output;
+  } // randomize
+
+  public static void main(String[] args) {
+  ArrayList<String>[] word1;
+
+
+    word1.add("a");
+    word1.add("r");
+    word1.add("r");
+    word1.add("a");
+    word1.add("y");
+  System.out.println(randomize(word1));
+
+    // // word 2 - memory
+    // word2.add("m");
+    // word2.add("e");
+    // word2.add("m");
+    // word2.add("o");
+    // word2.add("r");
+    // word2.add("y");
+    //
+    // // word 3 - programming
+    // word3.add("p");
+    // word3.add("r");
+    // word3.add("o");
+    // word3.add("g");
+    // word3.add("r");
+    // word3.add("a");
+    // word3.add("m");
+    // word3.add("m");
+    // word3.add("i");
+    // word3.add("n");
+    // word3.add("g");
+    //
+    // // word 4 - concatenation
+    // word4.add("c");
+    // word4.add("o");
+    // word4.add("n");
+    // word4.add("c");
+    // word4.add("a");
+    // word4.add("t");
+    // word4.add("e");
+    // word4.add("n");
+    // word4.add("a");
+    // word4.add("t");
+    // word4.add("i");
+    // word4.add("o");
+    // word4.add("n");
+
   }
 
   public static void leave() {
