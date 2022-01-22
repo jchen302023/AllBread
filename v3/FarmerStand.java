@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class FarmerStand extends Location{
 
   static Scanner scanner = new Scanner(System.in);
-  static ArrayList<String>[] word1;
-  static ArrayList<String>[] word2;
-  static ArrayList<String>[] word3;
-  static ArrayList<String>[] word4;
+  private static ArrayList<String> word1;
+  private static ArrayList<String> word2;
+  private static ArrayList<String> word3;
+  private static ArrayList<String> word4;
 
   public static void stand(){
     String s;
@@ -112,11 +112,11 @@ public class FarmerStand extends Location{
 
   } //scrambleds
 
-  public static ArrayList<String>[] randomize(ArrayList<String>[] a) {
-    ArrayList<String>[] output = new ArrayList<String>[a.size()];
+  public static ArrayList<String> randomize(ArrayList<String> a) {
+    ArrayList<String> output = new ArrayList<String>(); 
     for( String o : a )
       output.add( o );
-    for (int i=a.size; i>0; i--) {
+    for (int i=a.size(); i>0; i--) {
       int randIndex = (int) (Math.random()*i);
       output.add(output.get(randIndex));
       output.remove(randIndex);
