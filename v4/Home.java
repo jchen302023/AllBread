@@ -7,13 +7,13 @@ public class Home extends Location{
 
   public static void home() {
     String s;
-    s = "\n==============================\n" + TerminallyIll.color(40,37);
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "    ____|| \n";
     s += "  /田  田 /\\\n";
     s += "  |__間__| |\n";
     s += "\nYou are at home now.\n";
-    s += "What would you like to do?\n";
-    s += "\n\t1: View Inventory \n";
+    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "What would you like to do?" + TerminallyIll.color(37, TerminallyIll.background(30));
+    s += "\n\n\t1: View Inventory \n";
     s += "\t2: Talk to GrandmaCat \n";
     s += "\t3: Exit House \n";
     System.out.print(s);
@@ -50,7 +50,7 @@ public class Home extends Location{
         System.exit(0);
       } // if you have cake game ends
     }
-      System.out.println("\n==============================");
+      System.out.println(TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================" + TerminallyIll.color(37,TerminallyIll.background(30)));
       System.out.println("\nYou wish to talk to GrandmaCat");
       System.out.println("\nHowever, you do not have anything for GrandmaCat right now ):");
       System.out.println("\nYou should come back when you got something for GrandmaCat");
@@ -59,10 +59,10 @@ public class Home extends Location{
 
   public static void leaveHome() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n"  + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nYou have chosen to leave your humble abode. \n";
-    s += "\nWhere would you like to go? \n";
-    s += "\n\t1: View Inventory \n";
+    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nWhere would you like to go?" + TerminallyIll.color(37, TerminallyIll.background(30));
+    s += "\n\n\t1: View Inventory \n";
     s += "\t2: The Rose Garden \n";
     s += "\t3: The Farmers Stand \n";
     s += "\t4: The Convenience Store \n";

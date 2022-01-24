@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -8,14 +7,14 @@ public class Bakery extends Location {
 
   public static void bakery() {
     String s;
-    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "    ____|| \n";
     s += "  /田  田 /\\\n";
     s += "  |__間__| |\n";
     s += "\nYou are at the Bakery now.\n";
     s += "\nThe BakerCat behind the counter warmly greets you\n";
-    s += "\nWhat would you like to do?\n";
-    s += "\n\t1: View Inventory \n";
+    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nWhat would you like to do?" + TerminallyIll.color(37, TerminallyIll.background(30));
+    s += "\n\n\t1: View Inventory \n";
     s += "\t2: Talk to BakerCat \n";
     s += "\t3: Exit Bakery \n";
     System.out.print(s);
@@ -54,8 +53,8 @@ public static void talkToBaker() {
     } // inner
   } // outer
   if (counter == 4) {
-    s = "\nYou seem to have all the ingredients. Would you like me to bake a cake for you?\n";
-    s += "\n\t1: Yes \n";
+    s = TerminallyIll.color(30, TerminallyIll.background(36)) + "\nYou seem to have all the ingredients. Would you like me to bake a cake for you?" + TerminallyIll.color(37, TerminallyIll.background(30));
+    s += "\n\n\t1: Yes \n";
     s += "\t2: No thank you \n";
     System.out.print(s);
 
@@ -72,7 +71,7 @@ public static void talkToBaker() {
 
   }
   else {
-    s = "\n==============================\n" + TerminallyIll.color(40,37);
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nHmm... You do not seem to have all the ingredients\n";
     s += "\nBakerCat advises you to come back when you have them all\n";
     System.out.print(s);
@@ -81,7 +80,7 @@ public static void talkToBaker() {
 
 public static void recieveCake() {
   String s;
-  s = TerminallyIll.color(32, 32) + "\n==============================\n" + TerminallyIll.color(40,37);
+  s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
   s += "\nYou now have a cake!\n";
   s += "   iiiiiiiiii ";
   s += "  |:H:a:p:p:y:|";
@@ -107,10 +106,10 @@ public static void recieveCake() {
 
   public static void leave() {
     String s;
-    s = TerminallyIll.color(32, 32) + "\n==============================\n" + TerminallyIll.color(40,37);
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nYou have been kicked out of the Bakery \n";
-    s += "\nWhere would you like to go? \n";
-    s += "\n\t1: View Inventory \n";
+    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nWhere would you like to go?" + TerminallyIll.color(37, TerminallyIll.background(30));
+    s += "\n\n\t1: View Inventory \n";
     s += "\t2: The Rose Garden \n";
     s += "\t3: The Farmers Stand \n";
     s += "\t4: The Convenience Store \n";

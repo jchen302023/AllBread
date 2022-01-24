@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -12,10 +11,10 @@ public class FarmerStand extends Location{
 
   public static void stand(){
     String s;
-    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nYou have arrived at the Farmer's Stand. \n";
-    s += "What would you like to do?\n";
-    s += "\n\t1: View Inventory \n";
+    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "What would you like to do?" + TerminallyIll.color(37, TerminallyIll.background(30));
+    s += "\n\n\t1: View Inventory \n";
     s += "\t2: Talk to FarmerCat Peng \n";
     s += "\t3: UnString the Word! \n";
     s += "\t4: Exit Farmer's Stand \n";
@@ -42,7 +41,7 @@ public class FarmerStand extends Location{
 
   public static void talkToPeng() {
     String s;
-    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nHello. My name is Peng.\n";
     s += "\nI am a foreign exchange student and I need help with my English homework.\n";
     s += "\nI would ask my cousin Shaun for help, but he has already lost far too many brain cells...\n";
@@ -53,7 +52,7 @@ public class FarmerStand extends Location{
 
   public static void unscrambleWord() {
     String s;
-    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nYou look down at the paper and what you see baffles you.";
     s += "\nYou have to unscramble words! Your favorite thing to do!";
     s += "\nEven better, they're CS terms!!!!";
@@ -109,7 +108,7 @@ public class FarmerStand extends Location{
     ArrayList<String> rand4 = randomize(word4);
 
     // word 1
-    s = "\nThe words increasing in difficulty so proceed with caution.";
+    s =  TerminallyIll.color(31, TerminallyIll.background(30)) + "\nThe words increasing in difficulty so proceed with caution." + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nHere's word one!";
     System.out.println(rand1);
     word1();
@@ -240,10 +239,10 @@ public class FarmerStand extends Location{
 
   public static void leave() {
     String s;
-    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nYou have decided to leave the Farmer's Stand. \n";
-    s += "\nWhere would you like to go? \n";
-    s += "\n\t1: View Inventory \n";
+    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nWhere would you like to go?" + TerminallyIll.color(37, TerminallyIll.background(30));
+    s += "\n\n\t1: View Inventory \n";
     s += "\t2: The Rose Garden \n";
     s += "\t3: The Farmers Stand \n";
     s += "\t4: The Convenience Store \n";

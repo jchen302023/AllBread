@@ -8,7 +8,7 @@ public class Barn extends Location{
 
   public static void barn() {
     String s;
-    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "                            +&-\n";
     s += "                           _.-^-._    .--.\n";
     s += "                        .-'   _   '-. |__|\n";
@@ -24,7 +24,7 @@ public class Barn extends Location{
     s += "\nHere you can collect the eggs and milk for your cake.\n";
     s += "\nTalk to farmer Shawn for more details.\n";
 
-    s += "\nWhat would you like to do?\n";
+    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nWhat would you like to do?\n" + TerminallyIll.color(37, TerminallyIll.background(30));
     s += "\n\t1: View Inventory \n";
     s += "\t2: Talk to farmer Shawn \n";
     s += "\t3: Crack the code! \n";
@@ -52,7 +52,7 @@ public class Barn extends Location{
 
   public static void talkToShawn() {
     String s;
-    s = TerminallyIll.color(32, 32) + "\n==============================\n" + TerminallyIll.color(40,37);
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nHey ya'll. My name is Shawn.\n";
     s += "\nI have the milk and eggs ready for you\n";
     s += "\nBUT FIRST complete this task for me.\n\n";
@@ -85,10 +85,10 @@ public class Barn extends Location{
         break;
       }
       else if (Math.abs(randInt - userGuess) < 5) {
-        System.out.println("You are approximately 5,778 K right now (that's as hot as the sun!)");
+        System.out.println(TerminallyIll.color(31, TerminallyIll.background(30)) + "You are approximately 5,778 K right now (that's as hot as the sun!)" + TerminallyIll.color(37,TerminallyIll.background(30)));
       }
       else if (Math.abs(randInt - userGuess) < 15) {
-        System.out.println("AHHHHHHH. YOU'RE BOILING!");
+        System.out.println(TerminallyIll.color(31, TerminallyIll.background(30)) + "AHHHHHHH. YOU'RE BOILING!" + TerminallyIll.color(37,TerminallyIll.background(30)));
       }
       else if (Math.abs(randInt - userGuess) < 50) {
         System.out.println("mmmmmmm Feels like a toasty toaster. Keep guessing!");
@@ -123,10 +123,10 @@ public class Barn extends Location{
 
   public static void leave() {
     String s;
-    s = TerminallyIll.color(32, 32) + "\n==============================\n"+ TerminallyIll.color(40,37);
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nYou have decided to leave the Barn. \n";
-    s += "\nWhere would you like to go? \n";
-    s += "\n\t1: View Inventory \n";
+    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nWhere would you like to go?" + TerminallyIll.color(37, TerminallyIll.background(30));
+    s += "\n\n\t1: View Inventory \n";
     s += "\t2: The Rose Garden \n";
     s += "\t3: The Farmers Stand \n";
     s += "\t4: The Convenience Store \n";

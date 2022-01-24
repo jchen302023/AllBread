@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -9,7 +8,7 @@ public class Location {
   static Scanner scanner = new Scanner(System.in);
 
   public static void inventory() {
-    System.out.println("\n==============================\n");
+    System.out.println(TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30)));
     System.out.println("Inventory:\n");
     if (inventory.size() == 0) {
       System.out.println("Love from GrandmaCat");

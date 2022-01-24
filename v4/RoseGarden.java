@@ -8,12 +8,12 @@ public class RoseGarden extends Location{
 
   public static void garden() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\n   🎕🎕🎕 \n";
     s += "\nYou are at the Rose Garden now.\n";
     s += "\nYou and Grandma tend to the flowers together over the weekends\n";
-    s += "\nWhat would you like to do?\n";
-    s += "\n\t1: View Inventory \n";
+    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nWhat would you like to do?" + TerminallyIll.color(37, TerminallyIll.background(30));
+    s += "\n\n\t1: View Inventory \n";
     s += "\t2: Pick a rose \n";
     s += "\t3: Exit Garden \n";
     System.out.print(s);
@@ -35,7 +35,7 @@ public class RoseGarden extends Location{
 
   public static void pickFlower() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nYou picked a rose\n";
     s += "\nRose added to inventory\n";
     s += "\nSomeone might want this pretty flower...\n";
@@ -47,10 +47,10 @@ public class RoseGarden extends Location{
 
     public static void leave() {
       String s;
-      s = "\n==============================\n";
+      s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
       s += "\nYou have decided to leave the Garden. \n";
-      s += "\nWhere would you like to go? \n";
-      s += "\n\t1: View Inventory \n";
+      s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nWhere would you like to go?" + TerminallyIll.color(37, TerminallyIll.background(30));
+      s += "\n\n\t1: View Inventory \n";
       s += "\t2: The Rose Garden \n";
       s += "\t3: The Farmers Stand \n";
       s += "\t4: The Convenience Store \n";

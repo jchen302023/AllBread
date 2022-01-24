@@ -22,7 +22,7 @@ public class Woo{
   public void newGame(){
     String s;
     //intro
-    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==== Welcome little cat :3 ====\n" + TerminallyIll.color(30,TerminallyIll.background(36));
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==== Welcome little cat :3 ====\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nYou are on a mission. Today is your grandma's birthday!!\n" + TerminallyIll.color(37, TerminallyIll.background(30));
     s += "And you, her favorite little kitten, FORGOR!!! OH NO!!!\n";
     s += "\nBUT FRET NOT. YOUR LOCAL MERCHANTS HAVE YOUR BACK!!!\n";
