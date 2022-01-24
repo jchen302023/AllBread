@@ -8,7 +8,7 @@
 - Visit the Farmer's Stand to obtain ``` Wheat ```
 - Visit the Barn to obtain ``` Eggs + Milk ```
 
-##### Once you have all the ingredients, visit the Bakery to collect the fruits of your efforts! 
+#### Once you have all the ingredients, visit the Bakery to collect the fruits of your efforts! 
 
 #### Running instructions: 
 ```
