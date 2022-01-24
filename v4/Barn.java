@@ -103,10 +103,10 @@ public class Barn extends Location{
         System.out.println("brrrrrrrr I feel like the ice in my water crunchyyy");
       }
       else if (Math.abs(randInt - userGuess) < 449) {
-        System.out.println("I feel the frostbite coming over my fingers. You have missed the mark");
+        System.out.println(TerminallyIll.color(32, TerminallyIll.background(30)) + "I feel the frostbite coming over my fingers. You have missed the mark" + TerminallyIll.color(37,TerminallyIll.background(30)));
       }
       else if (userGuess < 101 || userGuess > 999) {
-        System.out.println("uhhhh that's a three-digit number. math class anyone?");
+        System.out.println(TerminallyIll.color(32, TerminallyIll.background(30)) + "uhhhh it's a three-digit number. math class anyone?" + TerminallyIll.color(37,TerminallyIll.background(30)));
       }
       guesses--;
       System.out.println("You have "+guesses+" guesses remaining. \n");
