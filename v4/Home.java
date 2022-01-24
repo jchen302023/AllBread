@@ -11,8 +11,8 @@ public class Home extends Location{
     s += "    ____|| \n";
     s += "  /田  田 /\\\n";
     s += "  |__間__| |\n";
-    s += "\nYou are at home now.\n";
-    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "What would you like to do?" + TerminallyIll.color(37, TerminallyIll.background(30));
+    s += "\nYou are at home now.";
+    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nWhat would you like to do?" + TerminallyIll.color(37, TerminallyIll.background(30));
     s += "\n\n\t1: View Inventory \n";
     s += "\t2: Talk to GrandmaCat \n";
     s += "\t3: Exit House \n";
