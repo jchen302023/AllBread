@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -34,11 +33,21 @@ public class Home extends Location{
 
   } // Home
   public static void talkToGrandma() {
+    String s;
     String requireCake = "cake";
     for (int i = 0; i < inventory.size(); i ++) {
       if ((inventory.get(i)).compareTo("cake") == 0) {
-        System.out.println("Game over!");
-        return;
+        s = "\nWell done my little kitten. This cake looks very poggers!! \n";
+        s += "        /\\_____/\\";
+        s += "       /  o   o  \\";
+        s += "      ( ==  ^  == )";
+        s += "       )         (";
+        s += "      (           )";
+        s += "     ( (  )   (  ) )";
+        s += "    (__(__)___(__)__)";
+        s += "\nGame over!!! <3";
+        System.out.println(s);
+        System.exit(0);
       } // if you have cake game ends
     }
       System.out.println("\n==============================");

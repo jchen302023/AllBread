@@ -1,4 +1,4 @@
-import java.io.*;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -37,7 +37,10 @@ public class Bakery extends Location {
   } // Bakery
 
 public static void talkToBaker() {
+
+  String s;
   int counter = 0;
+
   ArrayList<String> requireCake = new ArrayList<String>();
   requireCake.add("milk");
   requireCake.add("eggs");
@@ -51,10 +54,24 @@ public static void talkToBaker() {
     } // inner
   } // outer
   if (counter == 4) {
-    recieveCake();
+    s = "\nYou seem to have all the ingredients. Would you like me to bake a cake for you?\n";
+    s += "\n\t1: Yes \n";
+    s += "\t2: No thank you \n";
+    System.out.print(s);
+
+    choice = scanner.nextLine();
+
+    if (choice.equals("1")) {
+      recieveCake();
+    } // choice 1
+    else if (choice.equals("2")){
+      s = "No worries, come back when you are ready! I'll be right here.";
+      System.out.print(s);
+      bakery();
+    } // choice 2
+
   }
   else {
-    String s;
     s = "\n==============================\n";
     s += "\nHmm... You do not seem to have all the ingredients\n";
     s += "\nBakerCat advises you to come back when you have them all\n";
@@ -66,6 +83,13 @@ public static void recieveCake() {
   String s;
   s = "\n==============================\n";
   s += "\nYou now have a cake!\n";
+  s += "   iiiiiiiiii ";
+  s += "  |:H:a:p:p:y:|";
+  s += "__|___________|__";
+  s += "|^^^^^^^^^^^^^^^^^|";
+  s += "|:B:i:r:t:h:d:a:y:|";
+  s += "|                 |";
+  s += "~~~~~~~~~~~~~~~~~~~";
   s += "\nCake added to inventory\n";
   s += "\nBakerCat advises you to bring it to GrandmaCat while it is still warm\n";
   System.out.print(s);
