@@ -12,13 +12,11 @@ public class Woo{
   //default constructor
   public Woo(){
     inventory = new ArrayList<String>();
-    // gotCake = false;
     newGame();
   }
 
 // Accessor Methods
   public static ArrayList<String> getInventory() { return inventory; }
-  // public static boolean getGotCake() { return gotCake; }
 
   //methods
   public void newGame(){
