@@ -34,6 +34,9 @@ UNRESOLVED ISSUES
  - We let the terminal error messages guide us on what methods to make static/
  non-static but we are still a little puzzled about why certain things needed
  to be one vs the other.
+ - Sometimes the higher/lower game in Barn.java does not return the messages
+ about how close the guess was to the actual number. No error message is
+ returned and this only occurs ocassionally but we are puzzled by why it occurs.
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
