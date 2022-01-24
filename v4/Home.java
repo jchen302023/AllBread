@@ -37,7 +37,7 @@ public class Home extends Location{
     String requireCake = "cake";
     for (int i = 0; i < inventory.size(); i ++) {
       if ((inventory.get(i)).compareTo("cake") == 0) {
-        s = "\nWell done my little kitten. This cake looks very poggers!! \n";
+        s = "\nWell done my little kitten. This cake looks very poggers!!\n\n";
         s += "        /\\_____/\\\n";
         s += "       /  o   o  \\\n";
         s += "      ( ==  ^  == )\n";
