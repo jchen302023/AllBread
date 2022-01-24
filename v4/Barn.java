@@ -24,8 +24,8 @@ public class Barn extends Location{
     s += "\nHere you can collect the eggs and milk for your cake.\n";
     s += "\nTalk to farmer Shawn for more details.\n";
 
-    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nWhat would you like to do?\n" + TerminallyIll.color(37, TerminallyIll.background(30));
-    s += "\n\t1: View Inventory \n";
+    s += TerminallyIll.color(30, TerminallyIll.background(36)) + "\nWhat would you like to do?" + TerminallyIll.color(37, TerminallyIll.background(30));
+    s += "\n\n\t1: View Inventory \n";
     s += "\t2: Talk to farmer Shawn \n";
     s += "\t3: Crack the code! \n";
     s += "\t4: Exit Barn \n";
