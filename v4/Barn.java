@@ -66,9 +66,9 @@ public class Barn extends Location{
 
   public static void crackTheCode() {
     String s;
-    s = "\nLike farmer Shawn pointed out, our task is to break this lock. \n";
-    s += "\nAll we know is that the combination is a three-digit number. \n";
-    s += "\nThe closer you get to the number, the warmer you'll be. \n";
+    s = "\nLike farmer Shawn pointed out, our task is to break this lock. \n\n";
+    s += TerminallyIll.color(33, TerminallyIll.background(30)) + "All we know is that the combination is a three-digit number." + TerminallyIll.color(37,TerminallyIll.background(30));
+    s += "\n\nThe closer you get to the number, the " + TerminallyIll.color(31, TerminallyIll.background(30)) + "warmer" + TerminallyIll.color(37,TerminallyIll.background(30)) + " you'll be. \n";
     s += "\nYou have a limited number of guesses so guess wisely! \n";
     s += "\nMay the force be with you. #farmerstrong #starwarsfan4life \n";
     System.out.println(s);
@@ -100,13 +100,13 @@ public class Barn extends Location{
         System.out.println("Ah yes, I too love to have hope. You are at room temperature. Like the crab cakes fresh from the freezer");
       }
       else if (Math.abs(randInt - userGuess) < 300) {
-        System.out.println("brrrrrrrr I feel like the ice in my water crunchyyy");
+        System.out.println(TerminallyIll.color(36, TerminallyIll.background(30)) + "brrrrrrrr I feel like the ice in my water crunchyyy" + TerminallyIll.color(37,TerminallyIll.background(30)));
       }
       else if (Math.abs(randInt - userGuess) < 449) {
-        System.out.println(TerminallyIll.color(32, TerminallyIll.background(30)) + "I feel the frostbite coming over my fingers. You have missed the mark" + TerminallyIll.color(37,TerminallyIll.background(30)));
+        System.out.println(TerminallyIll.color(36, TerminallyIll.background(30)) + "I feel the frostbite coming over my fingers. You have missed the mark" + TerminallyIll.color(37,TerminallyIll.background(30)));
       }
       else if (userGuess < 101 || userGuess > 999) {
-        System.out.println(TerminallyIll.color(32, TerminallyIll.background(30)) + "uhhhh it's a three-digit number. math class anyone?" + TerminallyIll.color(37,TerminallyIll.background(30)));
+        System.out.println(TerminallyIll.color(36, TerminallyIll.background(30)) + "uhhhh it's a three-digit number. math class anyone?" + TerminallyIll.color(37,TerminallyIll.background(30)));
       }
       guesses--;
       System.out.println("You have "+guesses+" guesses remaining. \n");

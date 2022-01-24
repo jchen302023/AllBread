@@ -38,13 +38,13 @@ public class Home extends Location{
     for (int i = 0; i < inventory.size(); i ++) {
       if ((inventory.get(i)).compareTo("cake") == 0) {
         s = "\nWell done my little kitten. This cake looks very poggers!! \n";
-        s += "        /\\_____/\\";
-        s += "       /  o   o  \\";
-        s += "      ( ==  ^  == )";
-        s += "       )         (";
-        s += "      (           )";
-        s += "     ( (  )   (  ) )";
-        s += "    (__(__)___(__)__)";
+        s += "        /\\_____/\\\n";
+        s += "       /  o   o  \\\n";
+        s += "      ( ==  ^  == )\n";
+        s += "       )         (\n";
+        s += "      (           )\n";
+        s += "     ( (  )   (  ) )\n";
+        s += "    (__(__)___(__)__)\n";
         s += "\nGame over!!! <3";
         System.out.println(s);
         System.exit(0);

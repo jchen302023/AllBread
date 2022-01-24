@@ -54,8 +54,8 @@ public class FarmerStand extends Location{
     String s;
     s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nYou look down at the paper and what you see baffles you.";
-    s += "\nYou have to unscramble words! Your favorite thing to do!";
-    s += "\nEven better, they're CS terms!!!!";
+    s += "\nYou have to unscramble words! Your favorite thing to do!\n";
+    s += TerminallyIll.color(33, TerminallyIll.background(30)) + "Even better, they're CS terms!!!!" + TerminallyIll.color(37,TerminallyIll.background(30));
     System.out.println(s);
 
     // word 1 - array
@@ -110,22 +110,23 @@ public class FarmerStand extends Location{
     // word 1
     s =  TerminallyIll.color(31, TerminallyIll.background(30)) + "\nThe words increasing in difficulty so proceed with caution." + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nHere's word one!";
-    System.out.println(rand1);
+    System.out.println(s);
+    System.out.println(TerminallyIll.color(35, TerminallyIll.background(30)) + rand1 + TerminallyIll.color(37,TerminallyIll.background(30)));
     word1();
 
     s = "\nWord 2 next!";
     System.out.println(s);
-    System.out.println(rand2);
+    System.out.println(TerminallyIll.color(35, TerminallyIll.background(30)) + rand2 + TerminallyIll.color(37,TerminallyIll.background(30)));
     word2();
 
     s = "\nAre you ready for word 3??";
     System.out.println(s);
-    System.out.println(rand3);
+    System.out.println(TerminallyIll.color(35, TerminallyIll.background(30)) + rand3 + TerminallyIll.color(37,TerminallyIll.background(30)));
     word3();
 
     s = "\nDrumroll please dun dun dun... word 4!";
     System.out.println(s);
-    System.out.println(rand4);
+    System.out.println(TerminallyIll.color(35, TerminallyIll.background(30)) + rand4 + TerminallyIll.color(37,TerminallyIll.background(30)));
     word4();
 
     recieveWheat();
