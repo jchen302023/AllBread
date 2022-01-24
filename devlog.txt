@@ -1,7 +1,7 @@
 AllBread
-Samantha Hua
-Ivina Wang
-Jacc Chen
+Samantha Hua (Poppy)
+Ivina Wang (Sealie)
+Jacc Chen (Large)
 pd 7
 ---------------------
 Cat Bakes Cake for GrandmaCat
@@ -10,38 +10,67 @@ Cat Bakes Cake for GrandmaCat
 ------------------------------------------
 OBSTACLES OVERCOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We were originally using BufferedReader as a means of reading user input
+ - We were originally using BufferedReader as a means of reading user input
 but we changed our code to utilize Scanner. This allowed
 us to read multiple lines of user input in a way that was easy for us
 to understand. This change required us to consult previous homework
 assignments, the think java textbook, and rumpus room lct's.
+ - We struggled with implementing our scramble game in FarmerStand.java because
+ of the new application of ArrayLists. We didn't know how to scramble the word
+ multiple times within a game but eventually got it to work through adding and
+ deleting the values every time the game was played as well as utilizing
+ Math.random.
+ - At first, we didn't quite understand how ANSI codes worked especially
+ because we used one long string with multiple new line statements. Sectioning
+ off certain points of the string was something we discovered and successfully
+ implemented in our game.
+
 
 UNRESOLVED ISSUES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-blah blah pesky bug...
-maybe some of these will move into the Obs.Ovrcm section...
+ - The way we scrambled words doesn't feel as efficient as it could be. While
+ the code accomplishes the task, we would like to improve the algorithm so that
+ the repeated code is minimized.
+ - We let the terminal error messages guide us on what methods to make static/
+ non-static but we are still a little puzzled about why certain things needed
+ to be one vs the other.
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-javac *.java compiles all the .java files in the current directory. However,
-if there is an error in one of the files, the whole thing does not work. Compile individually.
+ - javac *.java compiles all the .java files in the current directory. However,
+if there is an error in one of the files, no files are complied. Compile
+individually. We learned this as we developed some files before others and only
+focused on those files.
+ - We learned about ANSI codes to incorporate color into our game. We changed
+features like background color and text color to emphasize certain parts of our
+story line + dialogue.
+ - We discovered System.exit(0) which ends the program like Ctrl+C. This was
+ useful in forcing our game to end when the user has completed the goal.
+
 
 MID-DEVELOPMENT DESIGN CHANGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We removed the map feature from our game because it over-complicated the
+ - We removed the map feature from our game because it over-complicated the
 task beyond the amount of time we had to dedicate to this project.
-We also decided to create a Location.java parent class for the rest of our
+ - We chose to allow the player to access any location from any point in the
+ game. This simplified navigation through our game which was necessary with the
+ time frame we had.
+ - We also decided to create a Location.java parent class for the rest of our
 location files (ex: RoseGarden, Barn, etc.) in order to simplify our code
-and reduce and redundancies.
+and reduce any redundancies.
 
-we changed ___ to ___ bc...
 
 LESSONS LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-tales of wisdom gained...
+ - Develop the project in stages with small steps so that the issues you tackle
+remain relatively small because of the few changes you have just made. In the
+same vein, slowly build up your project so that the source of any errors are
+always obvious.
+ - Visualize your ideas through drawings and flowcharts before coding to fully
+ understand the task on hand. It also helps to just write things down for the
+ record in the (very likely) event you forget something.
+
 ||||||||||||||||||||||||||||||||||||||||||
-
-
 
  ______   ______   __   __   __       ______   _______
 /_____/\ /_____/\ /_/\ /_/\ /_/\     /_____/\ /______/\
@@ -127,4 +156,30 @@ Samantha :: Encountered a dilemma when tackling the scrambling word game. Debate
 the words (ArrayList<Character> vs char[]). Factored in things like ease to code, ease to understand, and
 efficiency. Updated the import statements of all of the files so that we no longer utilize java.util.* (This
 issue was brought up in a Piazza post)
+==============================================================
+
+2022-01-21
+--------------------------------------------------------------
+Jacc :: Discussed the way Strings and Characters would operate the same in our code as variable types within our ArrayList
+for the unscramble game. Decided that we would use ArrayList<String> for simplification in our code.
+Ivina :: Talked about how our scrambling algorithm should work so that we can create multiple random Strings from the same
+array containing a word in the event that the game is played multiple times. Visually expressed the algorithm to see what
+the for loops and array manipulations would look like.
+Samantha :: Corrected the syntax of our ArrayList initialization by pointing to previous examples where we used
+ArrayList.
+==============================================================
+
+2022-01-23
+--------------------------------------------------------------
+Jacc :: Pointed out that the user could rerun a method and the ArrayLists containing the words would
+be doubled. Noticed a awkward part of our game where the user would receive the cake and be forced out of the bakery.
+We changed it so that the user would have to confirm they want the cake. Discovered a way to make a section of the
+String a certain color while leaving the rest of the String untouched. (Using two ANSI codes before and after the
+section of text we want to be colored. The second ANSI code would reset the color for the remaining part of the String)
+Ivina :: Found an error in our for loop in the unscramble game because we weren't asking for user input after
+every iteration in the loop. Decided that we should change the background of questions to the user and the color
+of barriers within the text ("======").
+Samantha :: Solved the issue of the potentially doubled ArrayLists by clearing them at the end of the method.
+Explored the way you can change background color as well as text color of print statements using ANSI codes.
+Noticed that the methods we were calling from TerminallyIll were private instead of public like we needed them to be.
 ==============================================================
