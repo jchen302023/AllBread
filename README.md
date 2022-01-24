@@ -7,7 +7,7 @@
 #### Running instructions: 
 ```
   $ javac *.java
-  $ java woo
+  $ java Woo
 ```
 
 Good luck on your adventure! 
