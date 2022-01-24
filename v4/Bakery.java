@@ -8,7 +8,7 @@ public class Bakery extends Location {
 
   public static void bakery() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
     s += "    ____|| \n";
     s += "  /田  田 /\\\n";
     s += "  |__間__| |\n";
@@ -72,7 +72,7 @@ public static void talkToBaker() {
 
   }
   else {
-    s = "\n==============================\n";
+    s = "\n==============================\n" + TerminallyIll.color(40,37);
     s += "\nHmm... You do not seem to have all the ingredients\n";
     s += "\nBakerCat advises you to come back when you have them all\n";
     System.out.print(s);
@@ -81,7 +81,7 @@ public static void talkToBaker() {
 
 public static void recieveCake() {
   String s;
-  s = "\n==============================\n";
+  s = TerminallyIll.color(32, 32) + "\n==============================\n" + TerminallyIll.color(40,37);
   s += "\nYou now have a cake!\n";
   s += "   iiiiiiiiii ";
   s += "  |:H:a:p:p:y:|";
@@ -107,7 +107,7 @@ public static void recieveCake() {
 
   public static void leave() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, 32) + "\n==============================\n" + TerminallyIll.color(40,37);
     s += "\nYou have been kicked out of the Bakery \n";
     s += "\nWhere would you like to go? \n";
     s += "\n\t1: View Inventory \n";

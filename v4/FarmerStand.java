@@ -12,7 +12,7 @@ public class FarmerStand extends Location{
 
   public static void stand(){
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
     s += "\nYou have arrived at the Farmer's Stand. \n";
     s += "What would you like to do?\n";
     s += "\n\t1: View Inventory \n";
@@ -42,7 +42,7 @@ public class FarmerStand extends Location{
 
   public static void talkToPeng() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
     s += "\nHello. My name is Peng.\n";
     s += "\nI am a foreign exchange student and I need help with my English homework.\n";
     s += "\nI would ask my cousin Shaun for help, but he has already lost far too many brain cells...\n";
@@ -53,7 +53,7 @@ public class FarmerStand extends Location{
 
   public static void unscrambleWord() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
     s += "\nYou look down at the paper and what you see baffles you.";
     s += "\nYou have to unscramble words! Your favorite thing to do!";
     s += "\nEven better, they're CS terms!!!!";
@@ -240,7 +240,7 @@ public class FarmerStand extends Location{
 
   public static void leave() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
     s += "\nYou have decided to leave the Farmer's Stand. \n";
     s += "\nWhere would you like to go? \n";
     s += "\n\t1: View Inventory \n";

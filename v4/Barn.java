@@ -8,7 +8,7 @@ public class Barn extends Location{
 
   public static void barn() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
     s += "                            +&-\n";
     s += "                           _.-^-._    .--.\n";
     s += "                        .-'   _   '-. |__|\n";
@@ -52,7 +52,7 @@ public class Barn extends Location{
 
   public static void talkToShawn() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, 32) + "\n==============================\n" + TerminallyIll.color(40,37);
     s += "\nHey ya'll. My name is Shawn.\n";
     s += "\nI have the milk and eggs ready for you\n";
     s += "\nBUT FIRST complete this task for me.\n\n";
@@ -123,7 +123,7 @@ public class Barn extends Location{
 
   public static void leave() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, 32) + "\n==============================\n"+ TerminallyIll.color(40,37);
     s += "\nYou have decided to leave the Barn. \n";
     s += "\nWhere would you like to go? \n";
     s += "\n\t1: View Inventory \n";

@@ -8,7 +8,7 @@ public class ConvenienceStore extends Location{
 
   public static void store(){
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, TerminallyIll.background(30)) + "\n==============================\n" + TerminallyIll.color(40,37);
     s += "\nYou have arrived at the Convenience Store. \n";
     s += "What would you like to do?\n";
     s += "\n\t1: View Inventory \n";
@@ -34,7 +34,7 @@ public class ConvenienceStore extends Location{
 
   public static void talkToIven() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, 32) + "\n==============================\n" + TerminallyIll.color(40,37);
     s += "\nHey little buddy, I'm Iven.\n";
     s += "\nI want to give something to a special someone...\n";
     s += "\nBut I am still on my shift...\n";
@@ -72,7 +72,7 @@ public class ConvenienceStore extends Location{
     } // for
 
     if (exchangeHappened) {
-      s = "\n==============================\n";
+      s = TerminallyIll.color(32, 32) + "\n==============================\n" + TerminallyIll.color(40,37);
       s += "\nTYsm ilyyyy!! <3\n";
       s += "\nOops I didn't mean to say that... uh,,, thanks I guess\n";
       s += "\nHere's your sugar :))\n";
@@ -81,7 +81,7 @@ public class ConvenienceStore extends Location{
       System.out.print(s);
     }
     else {
-      s = "\n==============================\n";
+      s = TerminallyIll.color(32, 32) + "\n==============================\n" + TerminallyIll.color(40,37);
       s += "\nYou don't got no flowers.";
       s += "\nI'm sad. ):\n";
       System.out.print(s);
@@ -91,7 +91,7 @@ public class ConvenienceStore extends Location{
 
   public static void leave() {
     String s;
-    s = "\n==============================\n";
+    s = TerminallyIll.color(32, 32) + "\n==============================\n" + TerminallyIll.color(40,37);
     s += "\nYou have decided to leave the Convenience Store. \n";
     s += "\nWhere would you like to go? \n";
     s += "\n\t1: View Inventory \n";

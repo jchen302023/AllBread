@@ -7,7 +7,7 @@ public class Home extends Location{
 
   public static void home() {
     String s;
-    s = "\n==============================\n";
+    s = "\n==============================\n" + TerminallyIll.color(40,37);
     s += "    ____|| \n";
     s += "  /田  田 /\\\n";
     s += "  |__間__| |\n";
