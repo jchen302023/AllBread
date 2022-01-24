@@ -36,7 +36,7 @@ UNRESOLVED ISSUES
  to be one vs the other.
  - Sometimes the higher/lower game in Barn.java does not return the messages
  about how close the guess was to the actual number. No error message is
- returned and this only occurs ocassionally but we are puzzled by why it occurs.
+ returned and this only occurs occasionally but we are puzzled by why it occurs.
 
 COOL STUFF LEARNED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
