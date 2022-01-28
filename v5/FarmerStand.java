@@ -132,11 +132,6 @@ public class FarmerStand extends Location{
 
     recieveWheat();
 
-    word1.clear();
-    word2.clear();
-    word3.clear();
-    word4.clear();
-
   } //scrambleds
 
   public static void word1() {
@@ -175,6 +170,7 @@ public class FarmerStand extends Location{
         System.out.println(s);
       }
     } // for loop
+    word1.clear();
     word2.clear();
     s = "\nYou ran out of tries sad face :( now you have to try again";
     System.out.println(s);
@@ -196,6 +192,8 @@ public class FarmerStand extends Location{
         System.out.println(s);
       }
     } // for loop
+    word1.clear();
+    word2.clear();
     word3.clear();
     s = "\nYou ran out of tries sad face :( now you have to try again";
     System.out.println(s);
@@ -217,6 +215,9 @@ public class FarmerStand extends Location{
         System.out.println(s);
       }
     } // for loop
+    word1.clear();
+    word2.clear();
+    word3.clear();
     word4.clear();
     s = "\nYou ran out of tries sad face :( now you have to try again";
     System.out.println(s);
