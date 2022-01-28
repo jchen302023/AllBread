@@ -132,6 +132,11 @@ public class FarmerStand extends Location{
 
     recieveWheat();
 
+    word1.clear();
+    word2.clear();
+    word3.clear();
+    word4.clear();
+
   } //scrambleds
 
   public static void word1() {
