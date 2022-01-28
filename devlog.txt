@@ -186,3 +186,11 @@ Samantha :: Solved the issue of the potentially doubled ArrayLists by clearing t
 Explored the way you can change background color as well as text color of print statements using ANSI codes.
 Noticed that the methods we were calling from TerminallyIll were private instead of public like we needed them to be.
 ==============================================================
+
+2022-01-28
+--------------------------------------------------------------
+Samantha :: Found a part of the game with poor color contrast which inhibited the user from playing the game.
+Fixed this part of the code. Also found a bug where the scrambled array of Strings would sometimes be duplicated
+if the user replayed the game. Went back into the code to fix this error. Updated the root directory in 
+preparation for the gallery walk :)
+==============================================================
