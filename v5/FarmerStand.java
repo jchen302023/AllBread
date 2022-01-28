@@ -110,8 +110,8 @@ public class FarmerStand extends Location{
     // word 1
     s =  TerminallyIll.color(31, TerminallyIll.background(30)) + "\nThe words increasing in difficulty so proceed with caution." + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nHere's word one!";
-    System.out.println(rand1);
     System.out.println(s);
+    System.out.println(rand1);
     word1();
 
     s = "\nWord 2 next!";
