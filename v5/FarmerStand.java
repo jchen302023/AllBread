@@ -154,9 +154,13 @@ public class FarmerStand extends Location{
         System.out.println(s);
       }
     } // for loop
-    word1.clear();
+    // word1.clear();
     s = "\nYou ran out of tries sad face :( now you have to try again";
     System.out.println(s);
+    word1.clear();
+    word2.clear();
+    word3.clear();
+    word4.clear();
     stand();
   } // word 1
 
@@ -175,10 +179,14 @@ public class FarmerStand extends Location{
         System.out.println(s);
       }
     } // for loop
-    word1.clear();
-    word2.clear();
+    // word1.clear();
+    // word2.clear();
     s = "\nYou ran out of tries sad face :( now you have to try again";
     System.out.println(s);
+    word1.clear();
+    word2.clear();
+    word3.clear();
+    word4.clear();
     stand();
   } // word 2
 
@@ -197,11 +205,15 @@ public class FarmerStand extends Location{
         System.out.println(s);
       }
     } // for loop
+    // word1.clear();
+    // word2.clear();
+    // word3.clear();
+    s = "\nYou ran out of tries sad face :( now you have to try again";
+    System.out.println(s);
     word1.clear();
     word2.clear();
     word3.clear();
-    s = "\nYou ran out of tries sad face :( now you have to try again";
-    System.out.println(s);
+    word4.clear();
     stand();
   } // word 3
 
@@ -220,12 +232,16 @@ public class FarmerStand extends Location{
         System.out.println(s);
       }
     } // for loop
+    // word1.clear();
+    // word2.clear();
+    // word3.clear();
+    // word4.clear();
+    s = "\nYou ran out of tries sad face :( now you have to try again";
+    System.out.println(s);
     word1.clear();
     word2.clear();
     word3.clear();
     word4.clear();
-    s = "\nYou ran out of tries sad face :( now you have to try again";
-    System.out.println(s);
     stand();
   } // word 4
 
