@@ -111,31 +111,26 @@ public class FarmerStand extends Location{
     s =  TerminallyIll.color(31, TerminallyIll.background(30)) + "\nThe words increasing in difficulty so proceed with caution." + TerminallyIll.color(37,TerminallyIll.background(30));
     s += "\nHere's word one!";
     System.out.println(s);
-    System.out.println(TerminallyIll.color(35, TerminallyIll.background(30)) + rand1 + TerminallyIll.color(37,TerminallyIll.background(30)));
+    System.out.println(rand1);
     word1();
 
     s = "\nWord 2 next!";
     System.out.println(s);
-    System.out.println(TerminallyIll.color(35, TerminallyIll.background(30)) + rand2 + TerminallyIll.color(37,TerminallyIll.background(30)));
+    System.out.println(rand2);
     word2();
 
     s = "\nAre you ready for word 3??";
     System.out.println(s);
-    System.out.println(TerminallyIll.color(35, TerminallyIll.background(30)) + rand3 + TerminallyIll.color(37,TerminallyIll.background(30)));
+    System.out.println(rand3);
+
     word3();
 
     s = "\nDrumroll please dun dun dun... word 4!";
     System.out.println(s);
-    System.out.println(TerminallyIll.color(35, TerminallyIll.background(30)) + rand4 + TerminallyIll.color(37,TerminallyIll.background(30)));
+    System.out.println(rand4);
     word4();
 
     recieveWheat();
-
-    word1.clear();
-    word2.clear();
-    word3.clear();
-    word4.clear();
-
   } //scrambleds
 
   public static void word1() {
@@ -155,6 +150,10 @@ public class FarmerStand extends Location{
     } // for loop
     s = "\nYou ran out of tries sad face :( now you have to try again";
     System.out.println(s);
+    word1.clear();
+    word2.clear();
+    word3.clear();
+    word4.clear();
     stand();
   } // word 1
 
@@ -175,6 +174,10 @@ public class FarmerStand extends Location{
     } // for loop
     s = "\nYou ran out of tries sad face :( now you have to try again";
     System.out.println(s);
+    word1.clear();
+    word2.clear();
+    word3.clear();
+    word4.clear();
     stand();
   } // word 2
 
@@ -195,6 +198,10 @@ public class FarmerStand extends Location{
     } // for loop
     s = "\nYou ran out of tries sad face :( now you have to try again";
     System.out.println(s);
+    word1.clear();
+    word2.clear();
+    word3.clear();
+    word4.clear();
     stand();
   } // word 3
 
@@ -215,8 +222,12 @@ public class FarmerStand extends Location{
     } // for loop
     s = "\nYou ran out of tries sad face :( now you have to try again";
     System.out.println(s);
+    word1.clear();
+    word2.clear();
+    word3.clear();
+    word4.clear();
     stand();
-  } // word 1
+  } // word 4
 
   public static void recieveWheat() {
     String s;
